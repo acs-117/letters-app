@@ -1,0 +1,30 @@
+:root {
+
+  --bg_color: rgb(0,0,0);
+  --primary_color: rgb(68, 48, 126);
+  --sec_color: rgba(0,0,0,0.4);
+  
+}
+
+body {
+  background-color: var(--bg_color);
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.letters {
+  
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+
+  h1 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+
+  .letter {
+    border-radius: 15px;
+
+  }
+}
