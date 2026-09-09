@@ -16,6 +16,7 @@ const Write = () => {
         axios.post("http://localhost:3000/write", note_data)
         .then((res) =>{
             console.log(res);
+            alert("letter posted")
         })
         .catch((err) => {
             alert("error creating post");
@@ -26,16 +27,16 @@ const Write = () => {
 
     return (
 
-        <>
+        <div className='write'>
         <h1>Write</h1>
-        <form onSubmit={send_note}>
+        <form className = "form" onSubmit={send_note}>
             
-            <textarea type = "text" name = "title" placeholder='title'></textarea>
-            <textarea type = "text" name = "note" placeholder='note'></textarea>
+            <textarea type = "text" name = "title" placeholder='title' ></textarea>
+            <textarea type = "text" name = "note" placeholder='note' rows={12}></textarea>
             <button type= "submit">Submit</button>
 
         </form>
-        </>
+        </div>
     )
 }
 

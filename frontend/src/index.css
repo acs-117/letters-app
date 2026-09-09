@@ -1,30 +1,82 @@
 :root {
 
-  --bg_color: rgb(0,0,0);
+  --bg_color: rgb(9, 9, 34);
   --primary_color: rgb(68, 48, 126);
-  --sec_color: rgba(0,0,0,0.4);
+  --sec_color: rgba(0,0,0,0.5);
   
 }
 
 body {
   background-color: var(--bg_color);
   color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 120px;
+  
 }
 
 .letters {
-  
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
 
   h1 {
     font-size: 80px;
-    font-weight: 600;
+    margin-bottom: 50px;
   }
+}
+
+.letter-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .letter {
-    border-radius: 15px;
 
+    color: black;
+    border: 5px solid var(--sec_color);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    padding: 20px;
+    width: 100%;
+
+
+    h3 {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 15px;
+    }
+
+  }
+}
+
+.write {
+  
+  h1 {
+    font-size: 80px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    textarea{
+      background-color: var(--sec_color);
+      color: aliceblue;
+      font-size: 20px;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px;
+      width: 200px;
+      border-style: none;
+      border-radius: 10px;
+
+      background-color: aquamarine;
+
+    }
+    
   }
 }

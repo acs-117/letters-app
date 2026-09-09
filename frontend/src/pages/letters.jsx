@@ -44,21 +44,22 @@ const Letters = () => {
     return (
 
         <div className='letters'>
-            <h1>Letters</h1>
+            <h1 className = "heading" >Letters</h1>
             {/* <h2>{count}</h2>
             <button onClick={() => setcount(count+1)}>Button</button> */}
-
+        
+        <div className='letter-container'>
         {
             notes.map( (n)=> (
                 <div className = 'letter' key = {n._id}
                     style={{backgroundColor: colors[Math.floor(Math.random() * colors.length)]}}
                 >
-                    <p>{n.title}</p>
+                    <h3>{n.title}</h3>
                     <p>{n.note}</p>
                 </div>
             ))
         }
-
+        </div>
         </div>
     )
 }
